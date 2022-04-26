@@ -46,6 +46,9 @@ class _HomepageState extends State<Homepage> {
             height: 20,
           ),
           Todolist(insertFunction: addItem, deleteFunction: deleteItem),
+          const SizedBox(
+            height: 40,
+          ),
         ],
       ),
     );
