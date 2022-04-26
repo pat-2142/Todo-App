@@ -30,13 +30,14 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       backgroundColor: const Color(0xFFF5EBFF),
       body: Column(
         children: [
-          Todolist(insertFunction: addItem, deleteFunction: deleteItem),
           UserInput(
             insertFunction: addItem,
           ),
+          Todolist(insertFunction: addItem, deleteFunction: deleteItem),
         ],
       ),
     );
