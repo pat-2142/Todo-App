@@ -23,7 +23,7 @@ class UserInput extends StatelessWidget {
               child: TextField(
                 controller: textController,
                 decoration: const InputDecoration(
-                  hintText: 'add new todo',
+                  hintText: 'Create a new todo...',
                   border: InputBorder.none,
                 ),
               ),

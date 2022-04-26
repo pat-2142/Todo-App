@@ -37,6 +37,7 @@ class _TodocardState extends State<Todocard> {
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
             child: Checkbox(
+              shape: const CircleBorder(),
               value: widget.isChecked,
               onChanged: (bool? value) {
                 setState(() {
