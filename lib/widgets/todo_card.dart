@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_todo_app/models/todo_model.dart';
-import 'package:intl/intl.dart';
 
 // ignore: must_be_immutable
 class Todocard extends StatefulWidget {
@@ -31,11 +30,12 @@ class _TodocardState extends State<Todocard> {
         Todo(id: widget.id, title: widget.title, isChecked: widget.isChecked);
     //
     return Card(
+      margin: const EdgeInsets.symmetric(horizontal: 35, vertical: 1),
       child: Row(
         children: [
           // the checkbox
           Container(
-            margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Checkbox(
               shape: const CircleBorder(),
               value: widget.isChecked,
