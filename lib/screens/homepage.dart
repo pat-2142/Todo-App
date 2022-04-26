@@ -36,8 +36,14 @@ class _HomepageState extends State<Homepage> {
       backgroundColor: const Color(0xFFF5EBFF),
       body: Column(
         children: [
+          const SizedBox(
+            height: 20,
+          ),
           UserInput(
             insertFunction: addItem,
+          ),
+          const SizedBox(
+            height: 20,
           ),
           Todolist(insertFunction: addItem, deleteFunction: deleteItem),
         ],

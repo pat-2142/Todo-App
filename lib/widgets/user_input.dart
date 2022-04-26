@@ -8,19 +8,14 @@ class UserInput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(left: 20.0, right: 20.0),
-      padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 8),
+    return Card(
+      margin: const EdgeInsets.symmetric(horizontal: 35, vertical: 1),
       child: Row(
         children: [
           // the input box
           Expanded(
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 10),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.black45),
-                borderRadius: BorderRadius.circular(15),
-              ),
               child: TextField(
                 controller: textController,
                 decoration: const InputDecoration(
@@ -41,7 +36,6 @@ class UserInput extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 color: Theme.of(context).primaryColor,
-                borderRadius: BorderRadius.circular(15),
               ),
               padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 18),
               child: const Text(
